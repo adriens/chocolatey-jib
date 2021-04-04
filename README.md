@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/x7603wbn2yr32kib?svg=true)](https://ci.appveyor.com/project/adriens/chocolatey-schemacrawler)
+[![Build status](https://ci.appveyor.com/api/projects/status/uucur42l1y8ybige?svg=true)](https://ci.appveyor.com/project/adriens/chocolatey-jib)
 
 [![Chocolatey](https://img.shields.io/chocolatey/v/jib.svg)](https://chocolatey.org/packages/jib)
 [![Chocolatey](https://img.shields.io/chocolatey/dt/jib.svg)](https://chocolatey.org/packages/jib)
