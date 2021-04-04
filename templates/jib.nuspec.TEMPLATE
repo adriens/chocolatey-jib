@@ -21,7 +21,7 @@
     <tags>java docker kubernetes microservices gradle maven containers docker-registry maven-plugin gradle-plugin oci jib</tags>
     <licenseUrl>https://github.com/GoogleContainerTools/jib/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://toto.jpg</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/adriens/chocolatey-jib/master/JibLogo.png</iconUrl>
     <releaseNotes>https://github.com/GoogleContainerTools/jib/releases/tag/v@JIB_VERSION@-cli</releaseNotes>
     <docsUrl>https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html</docsUrl>
     <bugTrackerUrl>https://github.com/GoogleContainerTools/jib/issues</bugTrackerUrl>
