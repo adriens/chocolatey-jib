@@ -1,0 +1,6 @@
+﻿$tools = Split-Path $MyInvocation.MyCommand.Definition
+$package = Split-Path $tools
+$jib_home = Join-Path $package 'jib-@JIB_VERSION@'
+$jib_bat = Join-Path $jib_home 'bin/jib.bat'
+
+Uninstall-BinFile -Name 'jib' -Path $jib_home

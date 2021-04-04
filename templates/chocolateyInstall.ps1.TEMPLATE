@@ -1,0 +1,20 @@
+﻿$tools = Split-Path $MyInvocation.MyCommand.Definition
+$content = Join-Path (Split-Path $tools) 'content/'
+$bat = Join-Path $content 'jib-@JIB_VERSION@/bin/jib.bat'
+
+#$tools = Split-Path $MyInvocation.MyCommand.Definition
+#$package = Split-Path $tools
+#$jib_home = Join-Path $package 'jib-@JIB_VERSION@'
+#$jib_bat = Join-Path $sc_home 'bin/jib.bat'
+
+
+Install-ChocolateyZipPackage `
+    -PackageName 'jib' `
+    -Url 'https://github.com/GoogleContainerTools/jib/releases/download/v@JIB_VERSION@-cli/jib-jre-@JIB_VERSION@.zip' `
+    -Checksum '@SHA512@' `
+    -ChecksumType 'SHA512' `
+    -UnzipLocation $content
+
+Install-BinFile `
+  -Name 'jib' `
+  -Path $bat
